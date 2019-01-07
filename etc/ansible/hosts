@@ -23,13 +23,10 @@ debug_level=4
 openshift_enable_olm=true
 
 [masters]
-ip-10-0-2-203.ec2.internal openshift_public_ip=35.169.116.146.xip.io
+ip-10-0-2-203.ec2.internal
 
 [etcd]
 ip-10-0-2-203.ec2.internal
 
 [nodes]
-ip-10-0-2-203.ec2.internal openshift_node_group_name='node-config-master'
-ip-10-0-2-205.ec2.internal openshift_node_group_name='node-config-compute'
-ip-10-0-2-204.ec2.internal openshift_node_group_name='node-config-infra'
-
+ip-10-0-2-203.ec2.internal openshift_node_group_name='node-config-all-in-one'
